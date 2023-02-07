@@ -1,0 +1,109 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test regex 1.7.1 --all-targets --all-features
+Features: test-name=rust-regex:@
+Depends: dh-cargo (>= 18), librust-lazy-static-1+default-dev, librust-quickcheck-1-dev (>= 1.0.3-~~), librust-rand-0.8+getrandom-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test regex 1.7.1 --all-targets --no-default-features --features pattern
+Features: test-name=librust-regex-dev:pattern
+Depends: dh-cargo (>= 18), librust-lazy-static-1+default-dev, librust-quickcheck-1-dev (>= 1.0.3-~~), librust-rand-0.8+getrandom-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test regex 1.7.1 --all-targets --no-default-features --features perf-cache
+Features: test-name=librust-regex-dev:perf-cache
+Depends: dh-cargo (>= 18), librust-lazy-static-1+default-dev, librust-quickcheck-1-dev (>= 1.0.3-~~), librust-rand-0.8+getrandom-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test regex 1.7.1 --all-targets --no-default-features --features perf-dfa
+Features: test-name=librust-regex-dev:perf-dfa
+Depends: dh-cargo (>= 18), librust-lazy-static-1+default-dev, librust-quickcheck-1-dev (>= 1.0.3-~~), librust-rand-0.8+getrandom-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test regex 1.7.1 --all-targets --no-default-features --features perf-inline
+Features: test-name=librust-regex-dev:perf-inline
+Depends: dh-cargo (>= 18), librust-lazy-static-1+default-dev, librust-quickcheck-1-dev (>= 1.0.3-~~), librust-rand-0.8+getrandom-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test regex 1.7.1 --all-targets --no-default-features --features std
+Features: test-name=librust-regex-dev:std
+Depends: dh-cargo (>= 18), librust-lazy-static-1+default-dev, librust-quickcheck-1-dev (>= 1.0.3-~~), librust-rand-0.8+getrandom-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test regex 1.7.1 --all-targets --no-default-features --features unstable
+Features: test-name=librust-regex-dev:unstable
+Depends: dh-cargo (>= 18), librust-lazy-static-1+default-dev, librust-quickcheck-1-dev (>= 1.0.3-~~), librust-rand-0.8+getrandom-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test regex 1.7.1 --all-targets --no-default-features --features use_std
+Features: test-name=librust-regex-dev:use_std
+Depends: dh-cargo (>= 18), librust-lazy-static-1+default-dev, librust-quickcheck-1-dev (>= 1.0.3-~~), librust-rand-0.8+getrandom-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test regex 1.7.1 --all-targets --no-default-features
+Features: test-name=librust-regex-dev:
+Depends: dh-cargo (>= 18), librust-lazy-static-1+default-dev, librust-quickcheck-1-dev (>= 1.0.3-~~), librust-rand-0.8+getrandom-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test regex 1.7.1 --all-targets --no-default-features --features aho-corasick
+Features: test-name=librust-regex+aho-corasick-dev:aho-corasick
+Depends: dh-cargo (>= 18), librust-lazy-static-1+default-dev, librust-quickcheck-1-dev (>= 1.0.3-~~), librust-rand-0.8+getrandom-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test regex 1.7.1 --all-targets
+Features: test-name=librust-regex+default-dev:default
+Depends: dh-cargo (>= 18), librust-lazy-static-1+default-dev, librust-quickcheck-1-dev (>= 1.0.3-~~), librust-rand-0.8+getrandom-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test regex 1.7.1 --all-targets --no-default-features --features memchr
+Features: test-name=librust-regex+memchr-dev:memchr
+Depends: dh-cargo (>= 18), librust-lazy-static-1+default-dev, librust-quickcheck-1-dev (>= 1.0.3-~~), librust-rand-0.8+getrandom-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test regex 1.7.1 --all-targets --no-default-features --features perf
+Features: test-name=librust-regex+perf-dev:perf
+Depends: dh-cargo (>= 18), librust-lazy-static-1+default-dev, librust-quickcheck-1-dev (>= 1.0.3-~~), librust-rand-0.8+getrandom-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test regex 1.7.1 --all-targets --no-default-features --features perf-literal
+Features: test-name=librust-regex+perf-literal-dev:perf-literal
+Depends: dh-cargo (>= 18), librust-lazy-static-1+default-dev, librust-quickcheck-1-dev (>= 1.0.3-~~), librust-rand-0.8+getrandom-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test regex 1.7.1 --all-targets --no-default-features --features unicode
+Features: test-name=librust-regex+unicode-dev:unicode
+Depends: dh-cargo (>= 18), librust-lazy-static-1+default-dev, librust-quickcheck-1-dev (>= 1.0.3-~~), librust-rand-0.8+getrandom-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test regex 1.7.1 --all-targets --no-default-features --features unicode-age
+Features: test-name=librust-regex+unicode-age-dev:unicode-age
+Depends: dh-cargo (>= 18), librust-lazy-static-1+default-dev, librust-quickcheck-1-dev (>= 1.0.3-~~), librust-rand-0.8+getrandom-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test regex 1.7.1 --all-targets --no-default-features --features unicode-bool
+Features: test-name=librust-regex+unicode-bool-dev:unicode-bool
+Depends: dh-cargo (>= 18), librust-lazy-static-1+default-dev, librust-quickcheck-1-dev (>= 1.0.3-~~), librust-rand-0.8+getrandom-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test regex 1.7.1 --all-targets --no-default-features --features unicode-case
+Features: test-name=librust-regex+unicode-case-dev:unicode-case
+Depends: dh-cargo (>= 18), librust-lazy-static-1+default-dev, librust-quickcheck-1-dev (>= 1.0.3-~~), librust-rand-0.8+getrandom-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test regex 1.7.1 --all-targets --no-default-features --features unicode-gencat
+Features: test-name=librust-regex+unicode-gencat-dev:unicode-gencat
+Depends: dh-cargo (>= 18), librust-lazy-static-1+default-dev, librust-quickcheck-1-dev (>= 1.0.3-~~), librust-rand-0.8+getrandom-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test regex 1.7.1 --all-targets --no-default-features --features unicode-perl
+Features: test-name=librust-regex+unicode-perl-dev:unicode-perl
+Depends: dh-cargo (>= 18), librust-lazy-static-1+default-dev, librust-quickcheck-1-dev (>= 1.0.3-~~), librust-rand-0.8+getrandom-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test regex 1.7.1 --all-targets --no-default-features --features unicode-script
+Features: test-name=librust-regex+unicode-script-dev:unicode-script
+Depends: dh-cargo (>= 18), librust-lazy-static-1+default-dev, librust-quickcheck-1-dev (>= 1.0.3-~~), librust-rand-0.8+getrandom-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test regex 1.7.1 --all-targets --no-default-features --features unicode-segment
+Features: test-name=librust-regex+unicode-segment-dev:unicode-segment
+Depends: dh-cargo (>= 18), librust-lazy-static-1+default-dev, librust-quickcheck-1-dev (>= 1.0.3-~~), librust-rand-0.8+getrandom-dev (>= 0.8.3-~~), librust-rand-0.8+small-rng-dev (>= 0.8.3-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
