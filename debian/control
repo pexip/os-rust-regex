@@ -18,8 +18,9 @@ Build-Depends: debhelper (>= 12),
  librust-regex-syntax-0.6+unicode-script-dev (>= 0.6.27-~~) <!nocheck>,
  librust-regex-syntax-0.6+unicode-segment-dev (>= 0.6.27-~~) <!nocheck>,
  librust-regex-syntax-0.6-dev (>= 0.6.27-~~) <!nocheck>
-Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
-Uploaders:
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>
+XSBC-Pexip-Original-Uploaders:
  Sylvestre Ledru <sylvestre@debian.org>,
  Robin Krahl <robin.krahl@ireas.org>,
  kpcyrd <git@rxv.cc>,
@@ -30,6 +31,7 @@ Vcs-Browser: https://salsa.debian.org/rust-team/debcargo-conf/tree/master/src/re
 Homepage: https://github.com/rust-lang/regex
 X-Cargo-Crate: regex
 Rules-Requires-Root: no
+XS-Pexip-Upstream: http://deb.debian.org/debian/ bookworm
 
 Package: librust-regex-dev
 Architecture: any
